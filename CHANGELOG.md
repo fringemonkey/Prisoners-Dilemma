@@ -5,112 +5,58 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.0] - 2024-12-19
+## [2.1.0] - 2025-01-XX
 
-### 🚀 **Major Release - Complete Architecture Overhaul**
+### Added
+- **🐟 Interactive Fish Tank**: Watch strategies come alive as swimming fish!
+- **Visual Strategy Ecosystem**: See cooperation bonds and population changes in real-time
+- **User-Friendly Documentation**: Completely rewritten README for non-technical users
+- **YouTube Video Integration**: Embedded the inspiring video that started this project
+- **Simplified Navigation**: Clear, intuitive interface for all users
 
-#### **Added**
-- **Modern React 18** with TypeScript support
-- **Zustand State Management** for efficient state handling
-- **Professional Component Architecture** with proper separation of concerns
-- **Tailwind CSS** with custom design system and animations
-- **Collapsible Sidebar** with intuitive navigation
-- **Theme System** with dark/light mode and high contrast support
-- **Real-time Progress Tracking** during simulations
-- **Responsive Design** that works on all devices
-- **Professional Build System** with Create React App
-- **TypeScript** for full type safety and better development experience
-- **Modular File Structure** for maintainability and scalability
+### Changed
+- **Documentation Overhaul**: Made README accessible to everyone, not just developers
+- **Simplified Language**: Removed technical jargon, added clear explanations
+- **Visual Learning Focus**: Emphasized the fun, interactive aspects of the app
 
-#### **Changed**
-- **Complete UI Overhaul** - Replaced CDN-based approach with modern React components
-- **State Management** - Migrated from React useState to Zustand stores
-- **Styling System** - Replaced arbitrary Tailwind classes with proper design system
-- **Component Structure** - Broke down monolithic component into modular, reusable pieces
-- **Development Workflow** - Added hot reload, TypeScript checking, and professional tooling
+### Technical Improvements
+- **Fish Tank Component**: Canvas-based animation system for strategy visualization
+- **Performance Optimization**: Smooth 60fps animations with lightweight rendering
+- **Responsive Design**: Fish tank works on all device sizes
 
-#### **Removed**
-- **CDN Dependencies** - No more external React/CDN loading
-- **Monolithic Structure** - Replaced single-file approach with modular architecture
-- **Mock Components** - Replaced placeholder components with real implementations
-- **Arbitrary CSS Classes** - Standardized styling approach
+## [2.0.0] - 2025-01-XX
 
-#### **Fixed**
-- **Build System** - Resolved all dependency and import issues
-- **Type Safety** - Eliminated runtime errors with TypeScript
-- **Performance** - Optimized rendering and state updates
-- **Maintainability** - Made codebase easy to extend and modify
+### Added
+- **Complete Architecture Overhaul**: Modern React 18 with TypeScript
+- **Professional State Management**: Zustand for efficient, persistent state
+- **Advanced UI Components**: Tailwind CSS with custom design system
+- **Comprehensive Testing Suite**: 44 tests covering all core functionality
+- **CI/CD Pipeline**: Automated testing and deployment with GitHub Actions
+- **Professional Development Tools**: ESLint, TypeScript, and modern tooling
 
-#### **Technical Improvements**
-- **Package Management** - Proper npm dependencies and scripts
-- **Build Optimization** - Production-ready builds with optimization
-- **Development Tools** - Hot reload, TypeScript checking, ESLint
-- **Deployment** - Automated GitHub Pages deployment ready
+### Changed
+- **Technology Stack**: Migrated from CDN-based to modern React architecture
+- **Code Organization**: Modular, maintainable component structure
+- **Build System**: Professional Create React App setup with optimization
+- **Deployment**: Automated GitHub Pages deployment with quality checks
 
----
+### Technical Improvements
+- **Type Safety**: Full TypeScript implementation
+- **Performance**: Optimized rendering and state management
+- **Maintainability**: Clean, documented code with proper separation of concerns
+- **Testing**: Comprehensive test coverage for all core functionality
 
-## [1.0.0] - 2024-12-19
+## [1.0.0] - 2025-01-XX
 
-### 🎯 **Initial Release - CDN-based Standalone Application**
+### Added
+- **Initial Release**: Basic Prisoner's Dilemma simulation
+- **Core Game Logic**: Evolutionary tournament simulation
+- **Built-in Strategies**: Classic game theory strategies
+- **Simple UI**: Basic web interface for running simulations
+- **CDN-based Deployment**: Standalone HTML/JavaScript application
 
-#### **Added**
-- **Core Game Logic** - Complete Prisoner's Dilemma simulation engine
-- **Built-in Strategies** - 7 classic game theory strategies
-- **Community Strategies** - 5 additional strategies with ratings
-- **Evolutionary Algorithm** - Population evolution over generations
-- **Seeded RNG** - Reproducible results using mulberry32
-- **Basic UI** - Strategy selection, parameter configuration, results display
-- **GitHub Pages Ready** - Standalone HTML application
-- **Responsive Design** - Works on desktop and mobile devices
-
-#### **Features**
-- Multiple strategy types (Always Cooperate, Tit-for-Tat, Grim Trigger, etc.)
-- Customizable payoff matrix
-- Noise simulation for realistic strategy execution
-- Population size and generation controls
-- Real-time simulation progress
-- Results export and sharing capabilities
-- Dark/light theme support
-
----
-
-## **Version History Summary**
-
-| Version | Date | Description |
-|---------|------|-------------|
-| **2.0.0** | 2024-12-19 | 🚀 **Major Release** - Complete React/TypeScript overhaul |
-| **1.0.0** | 2024-12-19 | 🎯 **Initial Release** - CDN-based standalone application |
-
----
-
-## **Migration Guide: v1.0.0 → v2.0.0**
-
-### **For Users**
-- **No Breaking Changes** - All existing functionality preserved
-- **Enhanced Experience** - Better UI, faster performance, more features
-- **Same Game Logic** - Core simulation algorithms unchanged
-
-### **For Developers**
-- **New Architecture** - Modern React patterns and TypeScript
-- **Better Tooling** - Hot reload, type checking, professional build system
-- **Easier Maintenance** - Modular structure, clear separation of concerns
-
----
-
-## **Future Roadmap**
-
-### **v2.1.0** (Planned)
-- Advanced data visualization with Recharts
-- Permutation runner for batch parameter testing
-- Strategy creation and management interface
-- Data export/import functionality
-
-### **v2.2.0** (Planned)
-- Split view interface for comparing runs
-- Advanced analytics and statistics
-- Community strategy sharing
-- Performance optimizations
-
----
-
-*For detailed information about each version, see the [releases page](https://github.com/fringemonkey/Prisoners-Dilemma/releases).*
+### Technical Details
+- **Vanilla JavaScript**: No framework dependencies
+- **Canvas Graphics**: Basic visualization of results
+- **Local Storage**: Save simulation configurations
+- **Responsive Design**: Works on desktop and mobile devices
