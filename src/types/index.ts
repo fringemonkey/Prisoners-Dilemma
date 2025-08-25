@@ -13,7 +13,7 @@ export interface Strategy {
   color: string;
   rating?: number;
   downloads?: number;
-  getMove: (rng: () => number) => (history: GameHistory) => 'C' | 'D';
+  getMove: (rng: () => number) => (history: GameHistory[]) => 'C' | 'D';
 }
 
 export interface GameHistory {

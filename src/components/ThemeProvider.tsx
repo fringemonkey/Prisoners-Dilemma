@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect } from 'react';
-import { useUIStore } from '@/stores/uiStore';
+import { useUIStore } from '../stores/uiStore';
 
 interface ThemeContextType {
   theme: 'dark' | 'light';

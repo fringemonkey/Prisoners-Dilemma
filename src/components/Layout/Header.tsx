@@ -1,7 +1,7 @@
 import React from 'react';
-import { useUIStore } from '@/stores/uiStore';
-import { useSimulationStore } from '@/stores/simulationStore';
-import { usePermutationStore } from '@/stores/permutationStore';
+import { useUIStore } from '../../stores/uiStore';
+import { useSimulationStore } from '../../stores/simulationStore';
+import { usePermutationStore } from '../../stores/permutationStore';
 import { 
   Play, 
   Square, 

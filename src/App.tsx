@@ -1,17 +1,16 @@
 import React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from 'react-hot-toast';
-import { ThemeProvider } from '@/components/ThemeProvider';
-import { SimulationProvider } from '@/components/SimulationProvider';
-import { MainLayout } from '@/components/Layout/MainLayout';
-import { PermutationRunner } from '@/components/PermutationRunner';
-import { SimulationTabs } from '@/components/SimulationTabs';
-import { StrategyManager } from '@/components/StrategyManager';
-import { DataExporter } from '@/components/DataExporter';
-import { Settings } from '@/components/Settings';
-import { useUIStore } from '@/stores/uiStore';
-import { useSimulationStore } from '@/stores/simulationStore';
-import { usePermutationStore } from '@/stores/permutationStore';
+import { ThemeProvider } from './components/ThemeProvider';
+import { MainLayout } from './components/Layout/MainLayout';
+import { PermutationRunner } from './components/PermutationRunner';
+import { SimulationTabs } from './components/SimulationTabs';
+import { StrategyManager } from './components/StrategyManager';
+import { DataExporter } from './components/DataExporter';
+import { Settings } from './components/Settings';
+import { useUIStore } from './stores/uiStore';
+import { useSimulationStore } from './stores/simulationStore';
+import { usePermutationStore } from './stores/permutationStore';
 
 // Create a client
 const queryClient = new QueryClient({

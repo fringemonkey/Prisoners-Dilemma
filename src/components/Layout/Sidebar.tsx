@@ -9,8 +9,8 @@ import {
   ChevronRight,
   Gamepad2
 } from 'lucide-react';
-import { useUIStore } from '@/stores/uiStore';
-import { useTheme } from '@/components/ThemeProvider';
+import { useUIStore } from '../../stores/uiStore';
+import { useTheme } from '../ThemeProvider';
 
 const navigationItems = [
   {

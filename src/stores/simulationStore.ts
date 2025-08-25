@@ -9,14 +9,14 @@ import {
   CooperationData,
   PopulationData,
   HeadToHeadMatrix
-} from '@/types';
+} from '../types';
 import { 
   aggregatedTournament, 
   evolvePopulationWeighted, 
   mulberry32,
   defaultPayoffMatrix 
-} from '@/utils/gameLogic';
-import { allStrategies } from '@/utils/strategies';
+} from '../utils/gameLogic';
+import { allStrategies } from '../utils/strategies';
 
 interface SimulationState {
   runs: SimulationRun[];

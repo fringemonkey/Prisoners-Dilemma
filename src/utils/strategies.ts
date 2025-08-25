@@ -1,4 +1,4 @@
-import { Strategy } from '@/types';
+import { Strategy, GameHistory } from '../types';
 
 // Colorblind-safe palette (Okabe–Ito)
 export const COLORS = {
@@ -154,13 +154,13 @@ export function createCustomStrategy(
 ): Strategy {
   try {
     // eslint-disable-next-line no-new-func
-    const func = new Function("history", `return (${code})(history);`);
+    const func = new Function("history", `return (${code})(history);`) as (history: GameHistory[]) => 'C' | 'D';
     
     return {
       id: name.replace(/\s+/g, "").toLowerCase(),
       name,
       author,
-      getMove: () => func,
+      getMove: (rng: () => number) => func,
       color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
       rating: 0,
       downloads: 0

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { UIState } from '@/types';
+import { UIState } from '../types';
 
 interface UIActions {
   setTheme: (theme: 'dark' | 'light') => void;

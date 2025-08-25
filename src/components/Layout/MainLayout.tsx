@@ -1,7 +1,7 @@
 import React from 'react';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
-import { useUIStore } from '@/stores/uiStore';
+import { useUIStore } from '../../stores/uiStore';
 
 interface MainLayoutProps {
   children: React.ReactNode;

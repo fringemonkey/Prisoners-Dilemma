@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Prisoners-Dilemma/static/css/main.6b0ed835.css",
+    "main.js": "/Prisoners-Dilemma/static/js/main.32d2973b.js",
+    "index.html": "/Prisoners-Dilemma/index.html",
+    "main.6b0ed835.css.map": "/Prisoners-Dilemma/static/css/main.6b0ed835.css.map",
+    "main.32d2973b.js.map": "/Prisoners-Dilemma/static/js/main.32d2973b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b0ed835.css",
+    "static/js/main.32d2973b.js"
+  ]
+}

@@ -4,8 +4,8 @@ import {
   PermutationConfig, 
   SimulationConfig, 
   SimulationRun 
-} from '@/types';
-import { generatePermutations } from '@/utils/gameLogic';
+} from '../types';
+import { generatePermutations } from '../utils/gameLogic';
 import { useSimulationStore } from './simulationStore';
 
 interface PermutationState {
@@ -24,7 +24,7 @@ interface PermutationActions {
   
   // Execution
   runPermutation: (id: string) => Promise<void>;
-  stopPermutation: (id: string) => void;
+  stopPermutation: () => void;
   
   // Utilities
   duplicatePermutation: (id: string) => void;

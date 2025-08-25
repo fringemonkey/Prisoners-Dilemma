@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/Input';
-import { Slider } from '@/components/ui/Slider';
-import { useSimulationStore } from '@/stores/simulationStore';
-import { allStrategies } from '@/utils/strategies';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/Card';
+import { Button } from './ui/Button';
+import { Input } from './ui/Input';
+import { Slider } from './ui/Slider';
+import { useSimulationStore } from '../stores/simulationStore';
+import { allStrategies } from '../utils/strategies';
 
 export const SimulationTabs: React.FC = () => {
   const { 
