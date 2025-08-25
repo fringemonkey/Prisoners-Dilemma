@@ -1,42 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1756101187331" clover="3.2.0">
-  <project timestamp="1756101187331" name="All files">
-    <metrics statements="441" coveredstatements="149" conditionals="289" coveredconditionals="62" methods="166" coveredmethods="44" elements="896" coveredelements="255" complexity="0" loc="441" ncloc="441" packages="7" files="22" classes="22"/>
+<coverage generated="1756113125451" clover="3.2.0">
+  <project timestamp="1756113125451" name="All files">
+    <metrics statements="517" coveredstatements="135" conditionals="295" coveredconditionals="60" methods="180" coveredmethods="29" elements="992" coveredelements="224" complexity="0" loc="517" ncloc="517" packages="7" files="24" classes="24"/>
     <package name="src">
-      <metrics statements="8" coveredstatements="0" conditionals="20" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="App.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\App.tsx">
-        <metrics statements="6" coveredstatements="0" conditionals="20" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="App.tsx" path="F:\SC\fm\prison\src\App.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
       </file>
-      <file name="index.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\index.tsx">
+      <file name="index.tsx" path="F:\SC\fm\prison\src\index.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="6" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="41" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="18" coveredmethods="0"/>
-      <file name="DataExporter.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\DataExporter.tsx">
+      <metrics statements="121" coveredstatements="0" conditionals="40" coveredconditionals="0" methods="31" coveredmethods="0"/>
+      <file name="DataExporter.tsx" path="F:\SC\fm\prison\src\components\DataExporter.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
-      <file name="PermutationRunner.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\PermutationRunner.tsx">
+      <file name="FishTank.tsx" path="F:\SC\fm\prison\src\components\FishTank.tsx">
+        <metrics statements="76" coveredstatements="0" conditionals="26" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="66" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="86" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="90" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="96" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="121" count="0" type="stmt"/>
+        <line num="122" count="0" type="stmt"/>
+        <line num="123" count="0" type="stmt"/>
+        <line num="124" count="0" type="stmt"/>
+        <line num="127" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="129" count="0" type="stmt"/>
+        <line num="130" count="0" type="stmt"/>
+        <line num="131" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="133" count="0" type="stmt"/>
+        <line num="136" count="0" type="stmt"/>
+        <line num="137" count="0" type="stmt"/>
+        <line num="138" count="0" type="stmt"/>
+        <line num="139" count="0" type="stmt"/>
+        <line num="141" count="0" type="stmt"/>
+        <line num="142" count="0" type="stmt"/>
+        <line num="143" count="0" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="146" count="0" type="stmt"/>
+        <line num="150" count="0" type="stmt"/>
+        <line num="151" count="0" type="stmt"/>
+        <line num="152" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="154" count="0" type="stmt"/>
+        <line num="158" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="159" count="0" type="stmt"/>
+        <line num="160" count="0" type="stmt"/>
+        <line num="161" count="0" type="stmt"/>
+        <line num="162" count="0" type="stmt"/>
+        <line num="163" count="0" type="stmt"/>
+        <line num="164" count="0" type="stmt"/>
+        <line num="169" count="0" type="stmt"/>
+        <line num="172" count="0" type="stmt"/>
+        <line num="175" count="0" type="stmt"/>
+        <line num="187" count="0" type="stmt"/>
+      </file>
+      <file name="FishTankDemo.tsx" path="F:\SC\fm\prison\src\components\FishTankDemo.tsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+      </file>
+      <file name="PermutationRunner.tsx" path="F:\SC\fm\prison\src\components\PermutationRunner.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
       </file>
-      <file name="Settings.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\Settings.tsx">
+      <file name="Settings.tsx" path="F:\SC\fm\prison\src\components\Settings.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
       </file>
-      <file name="SimulationTabs.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\SimulationTabs.tsx">
+      <file name="SimulationTabs.tsx" path="F:\SC\fm\prison\src\components\SimulationTabs.tsx">
         <metrics statements="16" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="11" coveredmethods="0"/>
         <line num="8" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
@@ -55,12 +137,12 @@
         <line num="118" count="0" type="stmt"/>
         <line num="140" count="0" type="stmt"/>
       </file>
-      <file name="StrategyManager.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\StrategyManager.tsx">
+      <file name="StrategyManager.tsx" path="F:\SC\fm\prison\src\components\StrategyManager.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
       </file>
-      <file name="ThemeProvider.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\ThemeProvider.tsx">
+      <file name="ThemeProvider.tsx" path="F:\SC\fm\prison\src\components\ThemeProvider.tsx">
         <metrics statements="17" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="9" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
@@ -83,7 +165,7 @@
     </package>
     <package name="src.components.Layout">
       <metrics statements="36" coveredstatements="0" conditionals="46" coveredconditionals="0" methods="13" coveredmethods="0"/>
-      <file name="Header.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\Layout\Header.tsx">
+      <file name="Header.tsx" path="F:\SC\fm\prison\src\components\Layout\Header.tsx">
         <metrics statements="22" coveredstatements="0" conditionals="24" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
@@ -108,30 +190,30 @@
         <line num="115" count="0" type="stmt"/>
         <line num="129" count="0" type="stmt"/>
       </file>
-      <file name="MainLayout.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\Layout\MainLayout.tsx">
+      <file name="MainLayout.tsx" path="F:\SC\fm\prison\src\components\Layout\MainLayout.tsx">
         <metrics statements="3" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
       </file>
-      <file name="Sidebar.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\Layout\Sidebar.tsx">
+      <file name="Sidebar.tsx" path="F:\SC\fm\prison\src\components\Layout\Sidebar.tsx">
         <metrics statements="11" coveredstatements="0" conditionals="20" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
         <line num="65" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="68" count="0" type="stmt"/>
-        <line num="81" count="0" type="stmt"/>
-        <line num="91" count="0" type="stmt"/>
-        <line num="92" count="0" type="stmt"/>
-        <line num="94" count="0" type="stmt"/>
-        <line num="97" count="0" type="stmt"/>
-        <line num="135" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+        <line num="99" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="142" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.ui">
       <metrics statements="20" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="8" coveredmethods="0"/>
-      <file name="Button.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\ui\Button.tsx">
+      <file name="Button.tsx" path="F:\SC\fm\prison\src\components\ui\Button.tsx">
         <metrics statements="5" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="9" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
@@ -139,7 +221,7 @@
         <line num="26" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
       </file>
-      <file name="Card.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\ui\Card.tsx">
+      <file name="Card.tsx" path="F:\SC\fm\prison\src\components\ui\Card.tsx">
         <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
@@ -150,12 +232,12 @@
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
       </file>
-      <file name="Input.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\ui\Input.tsx">
+      <file name="Input.tsx" path="F:\SC\fm\prison\src\components\ui\Input.tsx">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
       </file>
-      <file name="Slider.tsx" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\components\ui\Slider.tsx">
+      <file name="Slider.tsx" path="F:\SC\fm\prison\src\components\ui\Slider.tsx">
         <metrics statements="5" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="14" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
@@ -165,8 +247,8 @@
       </file>
     </package>
     <package name="src.stores">
-      <metrics statements="161" coveredstatements="14" conditionals="45" coveredconditionals="2" methods="70" coveredmethods="15"/>
-      <file name="permutationStore.ts" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\stores\permutationStore.ts">
+      <metrics statements="161" coveredstatements="0" conditionals="45" coveredconditionals="0" methods="70" coveredmethods="0"/>
+      <file name="permutationStore.ts" path="F:\SC\fm\prison\src\stores\permutationStore.ts">
         <metrics statements="65" coveredstatements="0" conditionals="28" coveredconditionals="0" methods="26" coveredmethods="0"/>
         <line num="33" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
@@ -234,7 +316,7 @@
         <line num="193" count="0" type="stmt"/>
         <line num="209" count="0" type="stmt"/>
       </file>
-      <file name="simulationStore.ts" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\stores\simulationStore.ts">
+      <file name="simulationStore.ts" path="F:\SC\fm\prison\src\stores\simulationStore.ts">
         <metrics statements="82" coveredstatements="0" conditionals="15" coveredconditionals="0" methods="29" coveredmethods="0"/>
         <line num="51" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
@@ -319,37 +401,37 @@
         <line num="262" count="0" type="stmt"/>
         <line num="268" count="0" type="stmt"/>
       </file>
-      <file name="uiStore.ts" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\stores\uiStore.ts">
-        <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="15" coveredmethods="15"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="37" count="4" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="47" count="2" type="stmt"/>
-        <line num="51" count="2" type="stmt"/>
-        <line num="55" count="2" type="stmt"/>
-        <line num="61" count="31" type="stmt"/>
+      <file name="uiStore.ts" path="F:\SC\fm\prison\src\stores\uiStore.ts">
+        <metrics statements="14" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="15" coveredmethods="0"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.types">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\types\index.ts">
+      <file name="index.ts" path="F:\SC\fm\prison\src\types\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.utils">
       <metrics statements="175" coveredstatements="135" conditionals="158" coveredconditionals="60" methods="56" coveredmethods="29"/>
-      <file name="cn.ts" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\utils\cn.ts">
+      <file name="cn.ts" path="F:\SC\fm\prison\src\utils\cn.ts">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="4" count="0" type="stmt"/>
       </file>
-      <file name="gameLogic.ts" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\utils\gameLogic.ts">
+      <file name="gameLogic.ts" path="F:\SC\fm\prison\src\utils\gameLogic.ts">
         <metrics statements="104" coveredstatements="102" conditionals="65" coveredconditionals="46" methods="20" coveredmethods="19"/>
         <line num="5" count="10" type="stmt"/>
         <line num="6" count="906" type="stmt"/>
@@ -456,7 +538,7 @@
         <line num="217" count="39" type="stmt"/>
         <line num="221" count="1" type="stmt"/>
       </file>
-      <file name="strategies.ts" path="C:\Users\thein\OneDrive - XoN Dev\Prisoners delima\src\utils\strategies.ts">
+      <file name="strategies.ts" path="F:\SC\fm\prison\src\utils\strategies.ts">
         <metrics statements="70" coveredstatements="33" conditionals="93" coveredconditionals="14" methods="35" coveredmethods="10"/>
         <line num="4" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
