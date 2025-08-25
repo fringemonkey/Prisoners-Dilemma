@@ -4,23 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prisoner's Dilemma Simulation</title>
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
+    <!-- Dependencies -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <style>
-        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; }
-        .slider { -webkit-appearance: none; appearance: none; height: 8px; border-radius: 4px; background: #d1d5db; outline: none; }
-        .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 20px; height: 20px; border-radius: 50%; background: #3b82f6; cursor: pointer; }
-        .slider::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: #3b82f6; cursor: pointer; border: none; }
+        body { 
+            margin: 0; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; 
+        }
+        .slider {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            border-radius: 5px;
+            background: #d1d5db;
+            outline: none;
+        }
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #3b82f6;
+            cursor: pointer;
+        }
+        .slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #3b82f6;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/babel" src="main.js"></script>
+    <div id="root">
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
+            <div style="text-align: center;">
+                <h2>Loading Prisoner's Dilemma Simulation...</h2>
+                <p>Please wait while the app initializes...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- App Entry Point -->
     <script type="text/babel">
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<PrisonersDilemmaSimulation />);
+        // App initialization
+        class AppLoader {
+            constructor() {
+                this.dependencies = ['React', 'ReactDOM', 'Babel'];
+                this.init();
+            }
+
+            async init() {
+                console.log('🚀 Starting app initialization...');
+                
+                // Wait for dependencies
+                await this.waitForDependencies();
+                
+                // Load main app
+                await this.loadMainApp();
+                
+                // Start the app
+                this.startApp();
+            }
+
+            waitForDependencies() {
+                return new Promise((resolve) => {
+                    const check = () => {
+                        const ready = this.dependencies.every(dep => window[dep] !== undefined);
+                        if (ready) {
+                            console.log('✅ All dependencies loaded');
+                            resolve();
+                        } else {
+                            setTimeout(check, 100);
+                        }
+                    };
+                    check();
+                });
+            }
+
+            async loadMainApp() {
+                return new Promise((resolve, reject) => {
+                    console.log('📦 Loading main application...');
+                    
+                    const script = document.createElement('script');
+                    script.type = 'text/babel';
+                    script.src = 'main.js';
+                    
+                    script.onload = () => {
+                        console.log('✅ Main app loaded');
+                        resolve();
+                    };
+                    
+                    script.onerror = () => {
+                        console.error('❌ Failed to load main app');
+                        reject(new Error('Failed to load main.js'));
+                    };
+                    
+                    document.head.appendChild(script);
+                });
+            }
+
+            startApp() {
+                try {
+                    console.log('🎯 Starting React app...');
+                    
+                    if (typeof window.PrisonersDilemmaSimulation === 'undefined') {
+                        throw new Error('Main component not found');
+                    }
+
+                    const root = ReactDOM.createRoot(document.getElementById('root'));
+                    root.render(React.createElement(window.PrisonersDilemmaSimulation));
+                    
+                    console.log('🎉 App started successfully!');
+                } catch (error) {
+                    console.error('💥 Failed to start app:', error);
+                    this.showError(error.message);
+                }
+            }
+
+            showError(message) {
+                document.getElementById('root').innerHTML = `
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
+                        <div style="text-align: center; color: red;">
+                            <h2>🚨 App Failed to Start</h2>
+                            <p>${message}</p>
+                            <p>Check the console for details.</p>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Start the app loader
+        new AppLoader();
     </script>
 </body>
 </html>

@@ -3,7 +3,8 @@
 // NEW (UI/UX): High-contrast toggle, font-size (UI scale), clearer colors (Okabe–Ito),
 // larger labels/controls, sharper borders, improved chart contrast.
 
-import React, { useMemo, useState } from "react";
+// React is available globally from CDN
+const { useMemo, useState } = React;
 
 // Mock UI components for standalone usage
 const Card = ({ children, className, ...props }) => (
@@ -290,7 +291,7 @@ function evolvePopulationWeighted(population, avgPayoffs, evolutionRate) {
 }
 
 // ---------- Component ----------
-export default function PrisonersDilemmaSimulation() {
+function PrisonersDilemmaSimulation() {
   // UI + params
   const [payoffMatrix, setPayoffMatrix] = useState(payoffMatrixDefault);
   const [noise, setNoise] = useState(0.02);
@@ -757,3 +758,6 @@ export default function PrisonersDilemmaSimulation() {
     </div>
   );
 }
+
+// Make the component globally available
+window.PrisonersDilemmaSimulation = PrisonersDilemmaSimulation;
