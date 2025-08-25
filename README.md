@@ -4,7 +4,7 @@ A sophisticated web application that simulates evolutionary tournaments between 
 
 ## 🚀 Live Demo
 
-**[View Live Demo](https://yourusername.github.io/fringemonkey/Prisoners-Dilemma)
+[View Live Demo](https://fringemonkey.github.io/Prisoners-Dilemma)
 
 ## ✨ Features
 
