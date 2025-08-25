@@ -200,23 +200,6 @@ describe('Game Logic Utilities', () => {
 
   describe('generatePermutations', () => {
     it('should generate parameter combinations', () => {
-      const baseConfig = {
-        payoffMatrix: defaultPayoffMatrix,
-        noise: 0.01,
-        rounds: 100,
-        populationSize: 1000,
-        generations: 100,
-        evolutionRate: 0.1,
-        replications: 10,
-        seed: 123456789,
-        selectedStrategies: ['test']
-      };
-
-      const variations = {
-        noise: [0.01, 0.05],
-        populationSize: [100, 1000]
-      };
-
       // Test with a simpler approach - just test the basic function
       const permutations = generatePermutations(0.01, [0.01, 0.05, 0.1]);
 

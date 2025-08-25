@@ -57,11 +57,10 @@ const navigationItems = [
 
 export const Sidebar: React.FC = () => {
   const { 
-    sidebarCollapsed, 
-    toggleSidebar, 
     activeTab, 
-    setActiveTab,
-    theme,
+    setActiveTab, 
+    sidebarCollapsed, 
+    setSidebarCollapsed, 
     highContrast 
   } = useUIStore();
   const { toggleTheme } = useTheme();
@@ -79,7 +78,7 @@ export const Sidebar: React.FC = () => {
           </h1>
         )}
         <button
-          onClick={toggleSidebar}
+          onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
           className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
         >
           {sidebarCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/Card';
 import { Button } from './ui/Button';
-import { Input } from './ui/Input';
 import { Slider } from './ui/Slider';
 import { useSimulationStore } from '../stores/simulationStore';
 import { allStrategies } from '../utils/strategies';
@@ -137,7 +136,7 @@ export const SimulationTabs: React.FC = () => {
               <div>
                 <h4 className="font-medium mb-2">Leaderboard</h4>
                 <div className="space-y-2">
-                  {currentRun.leaderboard.map((entry, index) => (
+                  {currentRun.leaderboard.map((entry: { name: string; id: string; count: number }, index: number) => (
                     <div key={entry.id} className="flex justify-between items-center p-2 bg-gray-50 dark:bg-gray-800 rounded">
                       <span className="font-medium">
                         {index + 1}. {entry.name}

@@ -1,9 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { 
-  PermutationConfig, 
-  SimulationConfig, 
-  SimulationRun 
+  PermutationConfig
 } from '../types';
 import { generatePermutations } from '../utils/gameLogic';
 import { useSimulationStore } from './simulationStore';
@@ -17,7 +15,7 @@ interface PermutationState {
 
 interface PermutationActions {
   // Permutation management
-  createPermutation: (name: string, baseConfig: SimulationConfig, variations: any) => void;
+  createPermutation: (name: string, baseConfig: any, variations: any) => void;
   removePermutation: (id: string) => void;
   clearPermutations: () => void;
   setCurrentPermutation: (permutation: PermutationConfig | null) => void;
@@ -69,7 +67,7 @@ export const usePermutationStore = create<PermutationState & PermutationActions>
       
       setCurrentPermutation: (permutation) => set({ currentPermutation: permutation }),
       
-      runPermutation: async (id) => {
+      runPermutation: async (id: string) => {
         const permutation = get().permutations.find(p => p.id === id);
         if (!permutation) return;
         
@@ -88,8 +86,6 @@ export const usePermutationStore = create<PermutationState & PermutationActions>
           
           // Run each combination
           for (let i = 0; i < combinations.length; i++) {
-            const config = combinations[i];
-            
             // Update progress
             set({ progress: ((i + 1) / combinations.length) * 100 });
             
@@ -176,8 +172,8 @@ export const usePermutationStore = create<PermutationState & PermutationActions>
 );
 
 // Helper function to generate parameter combinations
-function generateParameterCombinations(baseConfig: SimulationConfig, variations: any): SimulationConfig[] {
-  const combinations: SimulationConfig[] = [];
+function generateParameterCombinations(baseConfig: any, variations: any): any[] {
+  const combinations: any[] = [];
   
   // Generate combinations for each parameter type
   const noiseCombos = variations.noise ? generatePermutations(baseConfig.noise, variations.noise) : [[baseConfig.noise]];

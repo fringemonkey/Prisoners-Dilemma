@@ -8,7 +8,7 @@ interface MainLayoutProps {
 }
 
 export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
-  const { sidebarCollapsed, theme } = useUIStore();
+  const { sidebarCollapsed } = useUIStore();
 
   return (
     <div className="flex h-screen bg-gray-50 dark:bg-gray-900">

@@ -35,7 +35,9 @@ const getTabIcon = (tabId: string) => {
 };
 
 export const Header: React.FC = () => {
-  const { activeTab, setActiveTab } = useUIStore();
+  const { 
+    activeTab
+  } = useUIStore();
   const { isRunning, stopSimulation, progress } = useSimulationStore();
   const { isRunning: isPermRunning, stopPermutation, progress: permProgress } = usePermutationStore();
 

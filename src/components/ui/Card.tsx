@@ -21,8 +21,10 @@ export const CardHeader: React.FC<CardHeaderProps> = ({ className, ...props }) =
 
 interface CardTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {}
 
-export const CardTitle: React.FC<CardTitleProps> = ({ className, ...props }) => (
-  <h3 className={cn("text-2xl font-semibold leading-none tracking-tight", className)} {...props} />
+export const CardTitle: React.FC<CardTitleProps> = ({ className, children, ...props }) => (
+  <h3 className={cn("text-2xl font-semibold leading-none tracking-tight", className)} {...props}>
+    {children}
+  </h3>
 );
 
 interface CardContentProps extends React.HTMLAttributes<HTMLDivElement> {}

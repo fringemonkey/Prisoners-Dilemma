@@ -1,13 +1,12 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { 
-  SimulationRun, 
   SimulationConfig, 
-  PayoffMatrix, 
-  Strategy,
   SimulationResult,
+  Strategy,
   CooperationData,
   PopulationData,
+  SimulationRun,
   HeadToHeadMatrix
 } from '../types';
 import { 
