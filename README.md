@@ -1,169 +1,161 @@
-# 🎯 Prisoner's Dilemma Evolutionary Tournament Simulation
+# 🎯 Prisoner's Dilemma Evolutionary Tournament Simulation v2.0.0
 
-A sophisticated web application that simulates evolutionary tournaments between different game theory strategies in the Prisoner's Dilemma game. **Perfect for GitHub Pages deployment!**
+A sophisticated web application that simulates evolutionary tournaments between different game theory strategies in the Prisoner's Dilemma game. Built with modern React, TypeScript, and professional architecture.
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://fringemonkey.github.io/Prisoners-Dilemma)
+**[View Live Demo](https://fringemonkey.github.io/Prisoners-Dilemma)** *(after GitHub Pages setup)*
 
 ## ✨ Features
 
 - **Multiple Built-in Strategies**: Always Cooperate, Always Defect, Tit-for-Tat, Generous TFT, Grim Trigger, Pavlov, Random
+- **Community Strategies**: Copycat, Forgiving, Opportunist, Adaptive, Gradual
 - **Custom Strategy Creation**: Add your own strategies using JavaScript functions
-- **Community Strategy Showcase**: Try strategies created by other users
 - **Evolutionary Dynamics**: Strategies compete and populations evolve over generations
 - **Comprehensive Analytics**: Charts showing payoff evolution, population changes, and cooperation rates
-- **Head-to-Head Matrix**: See how each strategy performs against every other strategy
-- **Dark Mode UI**: High contrast theme with customizable font scaling
-- **Export & Share**: Download results as CSV and share tournament outcomes
-- **Social Features**: Rate strategies, see download counts, and share results
+- **Permutation Runner**: Test multiple parameter combinations automatically
+- **Real-time Data**: See results as they come in during simulation
+- **Split View Interface**: Compare multiple runs side by side
+- **Data Export/Import**: Save and load simulation configurations
+- **Professional UI**: Dark/Light theme, high contrast mode, responsive design
 
-## 🌐 GitHub Pages Deployment
+## 🆕 What's New in v2.0.0
 
-### Quick Setup (1 minute!)
+### **🏗️ Complete Architecture Overhaul**
+- **Modern React 18** with TypeScript for type safety
+- **Zustand State Management** for efficient, persistent state
+- **Professional Component Structure** with proper separation of concerns
+- **Tailwind CSS** with custom design system and animations
 
-1. **Fork this repository** or create a new one
-2. **Upload the files** (`main.js`, `index.html`, `README.md`)
-3. **Enable GitHub Pages**:
-   - Go to Settings → Pages
-   - Source: "Deploy from a branch"
-   - Branch: `main` (or `master`)
-   - Folder: `/ (root)`
-4. **Wait 2-3 minutes** for deployment
-5. **Your app is live!** 🎉
+### **🎯 Enhanced User Experience**
+- **Collapsible Sidebar** with intuitive navigation
+- **Real-time Progress Tracking** during simulations
+- **Theme System** with dark/light mode and high contrast
+- **Responsive Design** that works on all devices
 
-### Custom Domain (Optional)
-- Add a custom domain in Settings → Pages
-- Update the share URL in `main.js` line 358
+### **⚡ Performance Improvements**
+- **Optimized Build System** with Create React App
+- **Efficient State Management** with Zustand
+- **Lazy Loading** ready for future implementations
+- **Professional Tooling** for development and deployment
+
+## 🏗️ Architecture
+
+Built with modern React patterns:
+- **React 18** with TypeScript
+- **Zustand** for state management
+- **Tailwind CSS** for styling
+- **Recharts** for data visualization
+- **Modular structure** for maintainability
+
+## 🚀 Quick Start
+
+### **1. Install Dependencies**
+```bash
+npm install
+```
+
+### **2. Install Additional Tailwind Plugins**
+```bash
+npm install @tailwindcss/forms @tailwindcss/typography
+```
+
+### **3. Start Development Server**
+```bash
+npm start
+```
+
+### **4. Build for Production**
+```bash
+npm run build
+```
+
+### **5. Deploy to GitHub Pages**
+```bash
+npm run deploy
+```
 
 ## 🎮 How to Use
 
-1. **Open the live URL** in any modern web browser
-2. **Configure Parameters**:
-   - Payoff Matrix (T, R, P, S values)
-   - Noise level (probability of moves being flipped)
-   - Rounds per match, Population size, Generations
-   - Evolution rate and replications
-3. **Select Strategies** to include in the tournament
-4. **Try Community Strategies** from the showcase
-5. **Add Custom Strategies** with your own JavaScript functions
-6. **Run Simulation** and watch strategies evolve!
-7. **Share Results** on social media or with friends
+### **Running Simulations**
+1. Select strategies from the built-in and community options
+2. Adjust parameters (population size, generations, noise, etc.)
+3. Click "Run Simulation" to start
+4. Watch real-time results and final leaderboard
+
+### **Creating Custom Strategies**
+1. Go to the Strategies tab
+2. Write a JavaScript function that takes game history and returns 'C' or 'D'
+3. Test your strategy against others
+
+### **Parameter Permutations**
+1. Use the Permutations tab to test multiple parameter combinations
+2. Set base configuration and variations
+3. Run batch simulations automatically
 
 ## 🧠 Game Theory Background
 
-The Prisoner's Dilemma is a fundamental game theory scenario where two players must choose between cooperation (C) and defection (D). The payoff structure typically follows:
-- **T (Temptation)** > **R (Reward)** > **P (Punishment)** > **S (Sucker's Payoff)**
-- **2R > T + S** (to make mutual cooperation the optimal collective outcome)
+The Prisoner's Dilemma is a fundamental problem in game theory that demonstrates why two rational individuals might not cooperate, even when it's in their best interests to do so.
 
-## 🎯 Built-in Strategies
+**Payoff Matrix:**
+- **T (Temptation)**: Highest payoff for defecting when opponent cooperates
+- **R (Reward)**: Payoff when both cooperate
+- **P (Punishment)**: Payoff when both defect
+- **S (Sucker's Payoff)**: Lowest payoff for cooperating when opponent defects
 
-- **Always Cooperate**: Always plays C
-- **Always Defect**: Always plays D  
-- **Tit-for-Tat**: Starts with C, then copies opponent's last move
-- **Generous TFT**: Like TFT but 10% chance to cooperate after opponent defects
-- **Grim Trigger**: Cooperates until opponent defects, then always defects
-- **Pavlov**: Win-stay-lose-shift strategy
-- **Random**: 50/50 chance of C or D each round
+**Classic Values**: T=5, R=3, P=1, S=0
 
-## 🏆 Community Strategies
+## 🔧 Technical Details
 
-- **Copycat**: Copies opponent's last move
-- **Forgiving**: Cooperates initially, defects if opponent ever defects
-- **Opportunist**: Cooperates for first 3 rounds, then always defects
+- **Seeded RNG**: Reproducible results using mulberry32 algorithm
+- **Evolutionary Algorithm**: Population evolves based on strategy performance
+- **Noise Simulation**: Realistic strategy execution errors
+- **Performance Optimized**: Efficient algorithms for large populations
+- **TypeScript**: Full type safety and better development experience
 
-## 💻 Technical Details
+## 📁 Project Structure
 
-- **Built with React** (standalone, no build tools required)
-- **GitHub Pages Ready** - works immediately after deployment
-- **Uses seeded random number generation** for reproducible results
-- **Implements weighted evolutionary dynamics**
-- **Responsive design** with Tailwind CSS
-- **Mock chart components** for standalone usage
-- **No server required** - pure client-side application
-
-## 📁 Files
-
-- `main.js` - Main React component with simulation logic
-- `index.html` - HTML file to run the application
-- `README.md` - This documentation
-
-## 🌟 Making It Interactive
-
-### For Contributors
-1. **Fork the repository**
-2. **Add new strategies** to the `communityStrategies` array
-3. **Improve the UI** or add new features
-4. **Submit a pull request**
-
-### For Users
-1. **Rate strategies** by modifying the rating values
-2. **Share results** using the built-in share button
-3. **Create custom strategies** and share the code
-4. **Experiment with parameters** to find interesting outcomes
-
-## 🔧 Custom Strategies
-
-To add a custom strategy, provide:
-1. **Strategy Name**: A descriptive name
-2. **Function**: JavaScript function that takes `history` parameter and returns 'C' or 'D'
-
-Example:
-```javascript
-(history) => {
-  if (!history || history.length === 0) return 'C';
-  const lastOpponent = history[history.length - 1].opponent;
-  return lastOpponent === 'C' ? 'C' : 'D';
-}
+```
+src/
+├── components/          # React components
+│   ├── Layout/         # MainLayout, Sidebar, Header
+│   ├── ui/            # Reusable UI components
+│   └── ...            # Feature-specific components
+├── hooks/              # Custom React hooks
+├── stores/             # State management (Zustand)
+├── types/              # TypeScript types
+├── utils/              # Game logic and utilities
+└── App.tsx            # Main application
 ```
 
-This creates a "Copycat" strategy that copies the opponent's last move.
+## 🌟 Built-in Strategies
+
+- **Always Cooperate**: Always plays C
+- **Always Defect**: Always plays D
+- **Tit for Tat**: Copies opponent's last move, starts with C
+- **Generous TFT**: Like TFT but 10% forgiveness
+- **Grim Trigger**: Cooperates until opponent defects, then always defects
+- **Pavlov**: Win-stay, lose-shift strategy
+- **Random**: Randomly chooses C or D
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here are some ideas:
-- **New strategies** for the community showcase
-- **UI improvements** and better visualizations
-- **Additional game theory scenarios**
-- **Performance optimizations**
-- **Documentation improvements**
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
-## 📊 Example Results
+## 📄 License
 
-After running a simulation, you can:
-- **View payoff evolution** over generations
-- **See population changes** as strategies compete
-- **Analyze cooperation rates** for each strategy
-- **Compare head-to-head performance** in a matrix
-- **Export data** for further analysis
-- **Share results** with friends and colleagues
+This project is open source and available under the [MIT License](LICENSE).
 
-## 🎉 Why This is Perfect for GitHub
+## 🙏 Acknowledgments
 
-- **No build process** - just HTML, CSS, and JavaScript
-- **Immediate deployment** with GitHub Pages
-- **Educational value** for game theory and evolution
-- **Interactive** - users can create and share strategies
-- **Open source** - easy to contribute and improve
-- **Mobile friendly** - works on all devices
-
-## 📱 Mobile Support
-
-The application is fully responsive and works great on:
-- Desktop computers
-- Tablets
-- Mobile phones
-- All modern browsers
-
-## 🔗 Links
-
-- **Live Demo**: [Your GitHub Pages URL]
-- **Repository**: [Your GitHub Repo URL]
-- **Issues**: [Report bugs or request features]
-- **Discussions**: [Share strategies and results]
+- Robert Axelrod for pioneering work on iterated Prisoner's Dilemma
+- Game theory community for strategy insights
+- React and TypeScript communities for excellent tooling
 
 ---
 
-**Made with ❤️ for the game theory community**
-
-*Fork, star, and contribute to make this even better!*
+**Ready to explore the fascinating world of evolutionary game theory? Start simulating! 🚀**
