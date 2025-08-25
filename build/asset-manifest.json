@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Prisoners-Dilemma/static/css/main.6b0ed835.css",
-    "main.js": "/Prisoners-Dilemma/static/js/main.d2e6b58a.js",
+    "main.css": "/Prisoners-Dilemma/static/css/main.589243ca.css",
+    "main.js": "/Prisoners-Dilemma/static/js/main.6f475ad0.js",
     "index.html": "/Prisoners-Dilemma/index.html",
-    "main.6b0ed835.css.map": "/Prisoners-Dilemma/static/css/main.6b0ed835.css.map",
-    "main.d2e6b58a.js.map": "/Prisoners-Dilemma/static/js/main.d2e6b58a.js.map"
+    "main.589243ca.css.map": "/Prisoners-Dilemma/static/css/main.589243ca.css.map",
+    "main.6f475ad0.js.map": "/Prisoners-Dilemma/static/js/main.6f475ad0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b0ed835.css",
-    "static/js/main.d2e6b58a.js"
+    "static/css/main.589243ca.css",
+    "static/js/main.6f475ad0.js"
   ]
 }

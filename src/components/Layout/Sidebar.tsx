@@ -1,13 +1,12 @@
 import React from 'react';
 import { 
-  Play, 
-  BarChart3, 
-  Settings, 
-  Database, 
-  Zap, 
   ChevronLeft, 
-  ChevronRight,
-  Gamepad2
+  ChevronRight, 
+  Gamepad2, 
+  Database, 
+  Settings, 
+  BarChart3,
+  Fish
 } from 'lucide-react';
 import { useUIStore } from '../../stores/uiStore';
 import { useTheme } from '../ThemeProvider';
@@ -16,18 +15,26 @@ const navigationItems = [
   {
     id: 'simulation',
     name: 'Simulation',
-    icon: Play,
-    description: 'Run single simulations',
+    icon: Gamepad2,
+    description: 'Run simulations',
     color: 'text-blue-500',
     bgColor: 'bg-blue-50 dark:bg-blue-900/20'
   },
   {
     id: 'permutations',
     name: 'Permutations',
-    icon: Zap,
-    description: 'Batch parameter testing',
+    icon: BarChart3,
+    description: 'Parameter variations',
     color: 'text-purple-500',
     bgColor: 'bg-purple-50 dark:bg-purple-900/20'
+  },
+  {
+    id: 'fish',
+    name: 'Fish Tank',
+    icon: Fish,
+    description: 'Strategy ecosystem',
+    color: 'text-cyan-500',
+    bgColor: 'bg-cyan-50 dark:bg-cyan-900/20'
   },
   {
     id: 'strategies',

@@ -11,6 +11,7 @@ import { Settings } from './components/Settings';
 import { useUIStore } from './stores/uiStore';
 import { useSimulationStore } from './stores/simulationStore';
 import { usePermutationStore } from './stores/permutationStore';
+import { FishTankDemo } from './components/FishTankDemo';
 
 // Create a client
 const queryClient = new QueryClient({
@@ -62,6 +63,9 @@ function App() {
               
               {activeTab === 'settings' && (
                 <Settings />
+              )}
+              {activeTab === 'fish' && (
+                <FishTankDemo />
               )}
             </div>
           </MainLayout>
