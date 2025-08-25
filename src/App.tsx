@@ -1,45 +1,33 @@
 import React from 'react';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { Toaster } from 'react-hot-toast';
-import { MainLayout } from './components/Layout/MainLayout';
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 1000 * 60 * 5, // 5 minutes
-      retry: 1,
-    },
-  },
-});
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <MainLayout>
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-8">
-            🧠 Prisoner's Dilemma Simulation
-          </h1>
-          <p className="text-lg mb-8">
-            Welcome back! The app is working again.
-          </p>
-          <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
-            ✅ App successfully loaded!
-          </div>
-        </div>
-      </MainLayout>
-      <Toaster 
-        position="top-right"
-        toastOptions={{
-          duration: 4000,
-          style: {
-            background: '#ffffff',
-            color: '#000000',
-            border: '1px solid #e5e7eb',
-          },
+    <div style={{ padding: '20px', textAlign: 'center' }}>
+      <h1>🧠 Prisoner's Dilemma Simulation</h1>
+      <p>Ultra-simple test version</p>
+      <div style={{ 
+        backgroundColor: '#d4edda', 
+        border: '1px solid #c3e6cb', 
+        padding: '10px', 
+        borderRadius: '5px',
+        margin: '20px 0'
+      }}>
+        ✅ If you see this, React is working!
+      </div>
+      <button 
+        onClick={() => alert('Button works!')}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: '#007bff',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer'
         }}
-      />
-    </QueryClientProvider>
+      >
+        Test Button
+      </button>
+    </div>
   );
 }
 
